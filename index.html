@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Queue System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hospital Queue Management</h1>
+  </header>
+
+  <main>
+    <section id="opdQueueSection">
+      <h2>OPD Queue</h2>
+      <ul id="opdQueueList"></ul>
+      <button onclick="addPatientToQueue()">Add Patient to OPD Queue</button>
+    </section>
+
+    <section id="bedAvailabilitySection">
+      <h2>Bed Availability</h2>
+      <p>Total Beds: <span id="totalBeds">10</span></p>
+      <p>Available Beds: <span id="availableBeds">10</span></p>
+      <button onclick="admitPatient()">Admit Patient</button>
+    </section>
+
+    <section id="admissionSection">
+      <h2>Admitted Patients</h2>
+      <ul id="admittedPatientsList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hospital Queue System</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
